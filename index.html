@@ -1,0 +1,92 @@
+
+<html> 
+<head>
+  <link type="text/css" rel="stylesheet" href="main.css"/>
+<title> CraigHarmon11.com </title> 
+<script>
+function banner(){
+      var text = confirm("Dude, do you really want to click on my banner?");
+      return text;
+    }
+  function answer(){
+  var radio = document.getElementsByName("trivia");
+  var selection = false;
+  var message = "";
+  for( var i = 0; i < radio.length; i++) {
+  if(radio[i].value == "c" && radio[i].checked == true) {
+      selection = true;
+    } //end if statement
+  } //end for loop
+
+  
+if(selection == true) {
+message = message + "<b><p style='color:#003399'>YOU GOT IT! YOUR ON FIRE!</p></b>";
+} else {
+message = message + "<b><p style='color:#ff0066'>WHAT A LAME ATTEMPT.</p></b>";
+}
+document.getElementById("response").innerHTML = message;
+
+} //end function answer  
+</script>
+</head> 
+<body id="background"> 
+<a href="http://byutv.com" onclick="return banner()">
+<header>  <span class="wrap-text"> CraigHarmon11.com </span> <br>[The  place where AWESOME happens!!!]</br> </header>
+</a>
+<nav> 
+  <ul id="navmenu">
+    <li class="navitem"> <a href="index.html"> Home </a> </li>
+    <li class="navitem"> <a href="games.html"> Games </a> </li>
+    <li class="navitem"> <a href="books.html"> Books </a> </li>
+  </ul>
+</nav> 
+
+
+
+
+<center> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QCUyhiF6-0Q" frameborder="0" allowfullscreen></iframe>
+<br> <br/>
+<audio id="audio"width="400" height="220" controls autoplay>
+  <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+  Your browser does not support HTML 5 audio.
+</audio>
+</center>
+<center>
+<h1> FANTLAND, I.O.T, A.I.T, D.R.A.T.S.F.T.M.D </h1>
+</center>
+<center>
+<p class="paragragh"> <u>I</u> will update this <b>website</b> 
+every once in awhile with <i>news!</i> 
+</p>
+</center>
+<div class="wrap-list"> 
+<ol>
+<li class=listitem"> FANTLAND, a book about romance, magic, and a very small dragon </li>
+<li class=listitem"> I.O.T, a book about a girl, a rebellion, and a dark army </li>
+<li class="listitem"> A.I.T, a book about twins, a scientest, and an army of crazy gohsts</li>
+</ol>
+</div>
+<div class="wrap-trivia"> 
+<h2> I.O.T Trivia question: </h2>
+<p class="pargragh"> Who is Lizzys {AKA. Lizard} real name in the book?</p>
+<form>
+  <div id="response"> </div>
+  <input type="radio" name="trivia" value="a"> Jena Tailer <br>
+  <input type="radio" name="trivia" value="b"> Massax Tyrone <br>
+  <input type="radio" name="trivia" value="c"> Amy Jones <br>
+  <input type="radio" name="trivia" value="d"> Dana Red <br> 
+   <input type="button" value="Click Here" onclick="answer()"id="button"> 
+</form>
+
+</div>
+<img src="https://i.ytimg.com/vi/6CBnqZkascs/maxresdefault.jpg" />
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXZlqVTH1v8L53ONxUc9MDIzyO0MGlCRO5wC-1JYuuhNIwJpbOSw" />
+
+<hr>
+<center> C.A.Harmon </center>
+<a href="http://pbskids.org">pbskids.org</a> </center>
+
+<footer> Craig Andrew Harmon <br>[The Amazing creator of this website!]</br> </footer> 
+</body> 
+</html>
